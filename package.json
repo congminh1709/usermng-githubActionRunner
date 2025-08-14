@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js",
+    "unitTest": "mocha tests/unit.test.js",
+    "e2eTest": "mocha tests/e2e.test.js",
     "start": "node app.js"
   },
   "keywords": [],
@@ -14,6 +15,7 @@
     "express": "^4.17.1",
     "mocha": "^8.2.1",
     "should": "^13.2.3",
-    "supertest": "^6.1.3"
+    "supertest": "^6.1.3",
+    "wait-on": "^8.0.4"
   }
 }
