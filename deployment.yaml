@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: usermng-travisci-heroku
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: usermng-travisci-heroku
+  template:
+    metadata:
+      labels:
+        app: usermng-travisci-heroku
+    spec:
+      containers:
+      - name: usermng-travisci-heroku
+        image: congminh1709/usermng-travisci-heroku:v1.1
+        ports:
+        - containerPort: 3000
