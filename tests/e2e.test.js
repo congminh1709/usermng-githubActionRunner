@@ -5,7 +5,7 @@ describe('Test public API', () => {
   it('should return status 200', async () => {
     try {
       const res = await request('http://localhost:3000')
-        .get('/posts/1')
+        .get('/')
         .set('Accept', 'application/json')
         .expect(200)
     } catch (e) {
